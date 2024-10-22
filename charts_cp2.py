@@ -1,8 +1,8 @@
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import src.backtest as bt
+import strategy as st
 import pandas as pd
-import strategy as m
 import locale
 
 """
@@ -11,7 +11,7 @@ Gráficos apresentados no capítulo de metodologia
 """
 
 # Dados a partir do ano de 2016
-dict_data = m.load_data(2016)
+dict_data = st.load_data(2016)
 
 # Seleção dos pares ITUB4 e BBDC4
 asset_x = 'ITUB4'
